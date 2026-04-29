@@ -1,31 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
 @layer base {
   :root {
-    --background: 0 0% 5%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 142 76% 45%;
-    --primary-foreground: 0 0% 5%;
-    --secondary: 0 84% 50%;
+    --background: 210 33% 3%;
+    --foreground: 195 40% 98%;
+    --card: 207 24% 8%;
+    --card-foreground: 195 40% 98%;
+    --popover: 207 24% 8%;
+    --popover-foreground: 195 40% 98%;
+    --primary: 190 100% 50%;
+    --primary-foreground: 210 33% 3%;
+    --secondary: 354 76% 50%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
-    --accent: 142 76% 45%;
-    --accent-foreground: 0 0% 5%;
-    --destructive: 0 84.2% 60.2%;
+    --muted: 205 18% 16%;
+    --muted-foreground: 200 14% 72%;
+    --accent: 190 100% 50%;
+    --accent-foreground: 210 33% 3%;
+    --destructive: 354 76% 50%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 142 76% 45%;
-    --radius: 0.625rem;
+    --border: 202 16% 22%;
+    --input: 202 16% 22%;
+    --ring: 190 100% 50%;
+    --radius: 0.5rem;
   }
 }
 
@@ -44,15 +44,15 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#22c55e] to-[#ef4444];
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#00d9ff] to-[#e11d2e];
   }
   
-  .glow-green {
-    box-shadow: 0 0 20px rgba(34, 197, 94, 0.5), 0 0 40px rgba(34, 197, 94, 0.3);
+  .glow-cyan {
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.5), 0 0 40px rgba(0, 217, 255, 0.3);
   }
   
   .glow-red {
-    box-shadow: 0 0 20px rgba(239, 68, 68, 0.5), 0 0 40px rgba(239, 68, 68, 0.3);
+    box-shadow: 0 0 20px rgba(225, 29, 46, 0.5), 0 0 40px rgba(225, 29, 46, 0.3);
   }
   
   .hover-lift {
@@ -78,16 +78,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #05070a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #22c55e, #ef4444);
+  background: linear-gradient(180deg, #00d9ff, #e11d2e);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #16a34a, #dc2626);
+  background: linear-gradient(180deg, #00b8d9, #b91c2b);
 }
 
 /* Animation keyframes */
@@ -104,10 +104,10 @@
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(34, 197, 94, 0.5);
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.45);
   }
   50% {
-    box-shadow: 0 0 40px rgba(34, 197, 94, 0.8);
+    box-shadow: 0 0 40px rgba(0, 217, 255, 0.75);
   }
 }
 
