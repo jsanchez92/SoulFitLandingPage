@@ -217,7 +217,7 @@ function App() {
         <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12">
           <div className="flex items-center justify-between h-16 md:h-20">
             <div className="flex items-center">
-              <img src="/logo.png" alt="Soulfit" className="h-12 md:h-16 w-auto object-contain" />
+              <img src="/logo.avif" alt="Soulfit" className="h-12 md:h-16 w-auto object-contain" />
             </div>
 
             {/* Desktop Navigation */}
@@ -349,7 +349,7 @@ function App() {
               </h2>
               <p className="text-white/70 text-lg leading-relaxed mb-6">
                 En Soulfit creemos que el fitness es más que levantar pesas. Es un estilo de vida
-                que transforma cuerpos y mentes. Desde 2020, hemos ayudado a miles de personas
+                que transforma cuerpos y mentes. Desde 2023, hemos ayudado a miles de personas
                 a alcanzar sus objetivos de salud y bienestar.
               </p>
               <p className="text-white/70 text-lg leading-relaxed mb-8">
