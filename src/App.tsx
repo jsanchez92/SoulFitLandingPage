@@ -25,6 +25,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
+import { openWhatsApp } from './config/contact';
 
 type GymArea = {
   title: string;
@@ -235,12 +236,12 @@ function App() {
             </div>
 
             <div className="hidden md:block">
-              {/* <Button
-                onClick={() => scrollToSection('services')}
+              <Button
+                onClick={openWhatsApp}
                 className="bg-gradient-to-r from-[#00d9ff] to-[#00b8d9] hover:from-[#00b8d9] hover:to-[#0094b3] text-white font-semibold px-6"
               >
-                Únete Ahora
-              </Button> */}
+                &Uacute;nete Ahora
+              </Button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -266,12 +267,12 @@ function App() {
                   {link.name}
                 </button>
               ))}
-              {/* <Button
-                onClick={() => scrollToSection('services')}
+              <Button
+                onClick={openWhatsApp}
                 className="w-full bg-gradient-to-r from-[#00d9ff] to-[#00b8d9] text-white font-semibold mt-4"
               >
-                Únete Ahora
-              </Button> */}
+                &Uacute;nete Ahora
+              </Button>
             </div>
           </div>
         )}
@@ -499,11 +500,12 @@ function App() {
                       <span className="text-4xl font-black text-[#00d9ff]">C${plan.price}</span>
                       <span className="text-white/50">/{plan.period}</span>
                     </div>
-                    {/* <Button
+                    <Button
+                      onClick={openWhatsApp}
                       className={`w-full ${plan.popular ? 'bg-[#00d9ff] hover:bg-[#00b8d9] text-black' : 'bg-white/10 hover:bg-white/20 text-white'}`}
                     >
-                      Seleccionar
-                    </Button> */}
+                      M&aacute;s informaci&oacute;n
+                    </Button>
                   </CardContent>
                 </Card>
               ))}
@@ -535,11 +537,12 @@ function App() {
                       <span className="text-4xl font-black text-[#e11d2e]">C${plan.price}</span>
                       <span className="text-white/50">/{plan.period}</span>
                     </div>
-                    {/* <Button
+                    <Button
+                      onClick={openWhatsApp}
                       className={`w-full ${plan.popular ? 'bg-[#e11d2e] hover:bg-[#b91c2b] text-white' : 'bg-white/10 hover:bg-white/20 text-white'}`}
                     >
-                      Seleccionar
-                    </Button> */}
+                      M&aacute;s informaci&oacute;n
+                    </Button>
                   </CardContent>
                 </Card>
               ))}
@@ -604,9 +607,12 @@ function App() {
                     <span className="text-4xl font-black text-gradient">C$2,200</span>
                     <span className="text-white/50">/mes</span>
                   </div>
-                  {/* <Button className="bg-gradient-to-r from-[#00d9ff] to-[#e11d2e] hover:opacity-90 text-white font-bold px-8 py-6">
-                    Contratar
-                  </Button> */}
+                  <Button
+                    onClick={openWhatsApp}
+                    className="bg-gradient-to-r from-[#00d9ff] to-[#e11d2e] hover:opacity-90 text-white font-bold px-8 py-6"
+                  >
+                    M&aacute;s informaci&oacute;n
+                  </Button>
                 </div>
               </div>
             </CardContent>
@@ -724,7 +730,7 @@ function App() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
                   size="lg"
-                  onClick={() => scrollToSection('contact')}
+                  onClick={openWhatsApp}
                   className="bg-gradient-to-r from-[#00d9ff] to-[#00b8d9] hover:from-[#00b8d9] hover:to-[#0094b3] text-white font-bold text-lg px-8 py-6 animate-pulse-glow"
                 >
                   <Phone className="w-5 h-5 mr-2" />
@@ -767,7 +773,7 @@ function App() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">WhatsApp</h3>
                 <p className="text-white/60 mb-4">Escríbenos para más información</p>
-                <Button variant="outline" className="border-[#00d9ff]/50 text-[#00d9ff] hover:bg-[#00d9ff]/10">
+                <Button onClick={openWhatsApp} variant="outline" className="border-[#00d9ff]/50 text-[#00d9ff] hover:bg-[#00d9ff]/10">
                   Enviar Mensaje
                 </Button>
               </CardContent>
